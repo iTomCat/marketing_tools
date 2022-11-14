@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "39130238863",
+    "project_id": "pancakesff",
+    "storage_bucket": "pancakesff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39130238863:android:16941c9bc0a6c0a57745fa",
+        "android_client_info": {
+          "package_name": "com.coducode.marketing_tools"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39130238863-5hje7v3d8n7uih93jdnpmha8i2tuo6fk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGgIShdvh3o-5Xy-fRH8fXcSkMJlVfNZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39130238863-5hje7v3d8n7uih93jdnpmha8i2tuo6fk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "39130238863-dqprehbkv2npcl1oep7od3lh32ev4ig4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.coducode.marketingTools"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
