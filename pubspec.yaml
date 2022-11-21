@@ -18,6 +18,8 @@ dependencies:
   cloud_firestore: ^4.0.4
   sqflite: ^2.2.0+3
   logger: ^1.1.0
+  cached_network_image: ^3.2.2
+  shared_preferences: ^2.0.15
 
 dev_dependencies:
   flutter_test:
