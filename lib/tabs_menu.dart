@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:marketing_tools/Screens/screen_one.dart';
+import 'package:marketing_tools/Screens/screen_three.dart';
 import 'package:marketing_tools/Screens/screen_two.dart';
+import 'package:marketing_tools/screens/widget_test.dart';
+
+import 'Screens/screen_four.dart';
+import 'screens/ScreenZero.dart';
 
 class TabsMenu extends StatefulWidget {
   const TabsMenu({Key? key}) : super(key: key);
@@ -15,10 +19,11 @@ class _TabsMenuState extends State<TabsMenu> {
   final PageController _pageController = PageController();
 
   static const List<String> _pagesTitles = [
+    'Screen 0',
     'Screen 1',
     'Screen 2',
-    'Screen 3',
-    'Screen 4'
+    'Tego puba nie używamy',
+    'Widgets Test'
   ];
 
   void _selectedPage(int selectedIndex) {
@@ -32,6 +37,11 @@ class _TabsMenuState extends State<TabsMenu> {
   }
 
   late final List<Widget> _listItems = [
+    const NavigationDestination(
+      //selectedIcon: _icon(Assets.ASSETS_MENU_ICONS_MENU_SELECTED_SVG, isSelected: true),
+        selectedIcon: Icon(Icons.account_circle),
+        icon: Icon(Icons.account_circle_outlined),
+        label: 'Zero'),
     const NavigationDestination(
       //selectedIcon: _icon(Assets.ASSETS_MENU_ICONS_MENU_SELECTED_SVG, isSelected: true),
         selectedIcon: Icon(Icons.account_circle),
@@ -51,14 +61,15 @@ class _TabsMenuState extends State<TabsMenu> {
       //selectedIcon: _icon(Assets.ASSETS_MENU_ICONS_MENU_SELECTED_SVG, isSelected: true),
         selectedIcon: Icon(Icons.account_circle),
         icon: Icon(Icons.account_circle_outlined),
-        label: 'Four'),
+        label: 'Widgets'),
   ];
 
   final List<Widget> _screens = [
-    const ScreenOne(),
+    const ScreenZero(),
+    const ScreenFour(),
+    const ScreenThree(),
     const ScreenTwo(),
-    const ScreenTwo(),
-    const ScreenTwo(),
+    const WidgetTest()
   ];
 
   @override

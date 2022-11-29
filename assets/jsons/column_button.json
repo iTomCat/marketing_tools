@@ -1,0 +1,32 @@
+{
+  "type": "column",
+
+  "args": {
+    "crossAxisAlignment": "center",
+    "mainAxisAlignment": "center"
+  },
+
+  "children":
+  [
+    {
+      "type": "text",
+      "args": {
+        "text": "Ellloooo OK",
+        "style":{"color" : "FFa906ed", "fontSize" : "35"},
+        "textAlign" : "center"
+      }
+    },
+
+
+    {
+      "type": "text",
+      "args": {
+        "text": "Ellloooo2",
+        "style":{"color" : "FF06ed52", "fontSize" : "35"},
+        "textAlign" : "center"
+      }
+    }
+
+  ]
+
+}
