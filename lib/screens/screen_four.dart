@@ -15,13 +15,13 @@ class ScreenFour extends StatefulWidget {
 }
 
 class _ScreenFourState extends State<ScreenFour> {
+
+
   final  navigatorKey = GlobalKey<NavigatorState>();
-
-
   final registry = JsonWidgetRegistry.instance;
 
-  //JsonWidgetData? _data;
-  var _data;
+
+  JsonWidgetData? _data;
 
   @override
   void initState() {
@@ -40,7 +40,7 @@ class _ScreenFourState extends State<ScreenFour> {
   }
 
   @override
-  Widget build(BuildContext context) => _data.build(
+  Widget build(BuildContext context) => _data!.build(
     context: context,
     //registry: JsonWidgetRegistry.instance,
   );

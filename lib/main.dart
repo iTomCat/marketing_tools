@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:json_dynamic_widget/json_dynamic_widget.dart';
 
 import 'app_main.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -15,6 +16,34 @@ void main() async {
 Future<void> bootstrap() async {
 
   WidgetsFlutterBinding.ensureInitialized(); //Trzeba dodać pomimo że w opisie FlutterFirebase nie piszą
+
+  /*var navigatorKey = GlobalKey<NavigatorState>();
+
+  var registry = JsonWidgetRegistry.instance;
+  registry.navigatorKey = navigatorKey;
+
+
+  registry.registerFunctions({
+
+    'simplePrintMessage': ({args, required registry}) => () {
+      var message = 'This is a simple print message OK';
+      if (args?.isEmpty == false) {
+        for (var arg in args!) {
+          message += ' $arg';
+        }
+      }
+      // ignore: avoid_print
+      debugPrint(message);
+    },
+
+
+  });*/
+
+
+
+
+
+
 
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,

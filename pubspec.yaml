@@ -23,6 +23,7 @@ dependencies:
   dynamic_widget: ^4.0.5
   http: ^0.13.5
   json_dynamic_widget: ^5.1.3+5
+  automated_testing_framework: ^4.0.7+8
 
 dev_dependencies:
   flutter_test:
@@ -41,7 +42,7 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - 'assets/jsons/'
+    - 'assets/pages/'
 
   # To add assets to your application, add an assets section, like this:
   # assets:

@@ -1,0 +1,110 @@
+{
+  "type": "column",
+
+  "args": {
+    "crossAxisAlignment": "center",
+    "mainAxisAlignment": "center"
+  },
+
+  "children":
+  [
+    {
+      "type": "text",
+      "args": {
+        "text": "Ellloooo OK",
+        "style":{"color" : "FFa906ed", "fontSize" : "35"},
+        "textAlign" : "center"
+      }
+    },
+
+
+    {
+      "type": "text",
+      "args": {
+        "text": "Ellloooo2",
+        "style":{"color" : "FF06ed52", "fontSize" : "35"},
+        "textAlign" : "center"
+      }
+    },
+
+    {
+      "type": "elevated_button",
+      "args": {
+        "onPressed": "${simplePrintMessage('duppa', 2)}",
+        "style": {
+          "foregroundColor": {
+            "pressed": "FF2196F3",
+            "focused": "FF2196F3",
+            "empty": "FFF44336"
+          }
+        }
+      },
+      "child": {
+        "type": "text",
+        "args": {
+          "text": "   GO!   ",
+          "style":{"color" : "FFffffff"}
+        }
+      }
+
+    },
+
+
+    {
+      "type": "elevated_button",
+      "args": {
+        "onPressed": "${set_value('moja_zmienna','Elo')}",
+        "style": {
+          "foregroundColor": {
+            "pressed": "FF2196F3",
+            "focused": "FF2196F3",
+            "empty": "FFF44336"
+          }
+        }
+      },
+      "child": {
+        "type": "text",
+        "args": {
+          "text": "Button ze zmeinną",
+          "style":{"color" : "FFffffff"}
+        }
+      }
+
+    },
+
+
+    {
+      "type": "elevated_button",
+      "args": {
+          "onPressed": "${sayHello2('Hello, '+ moja_zmienna)}",
+        "style": {
+          "foregroundColor": {
+            "pressed": "FF2196F3",
+            "focused": "FF2196F3",
+            "empty": "FFF44336"
+          }
+        }
+      },
+      "child": {
+        "type": "text",
+        "args": {
+          "text": "${'Hello, '+ moja_zmienna}",
+          "style":{"color" : "FFffffff"}
+        }
+      }
+
+    },
+
+
+    {
+      "type": "network_image",
+      "args": {
+        "src": "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      }
+    }
+
+
+
+  ]
+
+}
